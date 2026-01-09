@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Resume | whoisthisdiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <div class="profile-img-container">
+                 <!-- Placeholder for photo, user can replace this -->
+                <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-img">
+            </div>
+            <h1>Your Name</h1>
+            <p class="subtitle">Cloud Engineer & AWS Enthusiast</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <div class="visitor-counter">
+                <i class="fas fa-eye"></i> Visitors: <span id="counter">Loading...</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2><i class="fas fa-user"></i> Biography</h2>
+            <p>Passionate Cloud Engineer with experience in AWS, Terraform, and Python. Dedicated to building scalable and secure cloud infrastructure.</p>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="job">
+                <h3>Cloud Engineer</h3>
+                <span class="date">2023 - Present</span>
+                <p>Deploying serverless applications and managing infrastructure as code.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="school">
+                <h3>AWS Academy</h3>
+                <p>Cloud Computing Architecture</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <ul class="cert-list">
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>AWS Certified Solutions Architect – Associate</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 whoisthisdiva.cat | Powered by AWS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
