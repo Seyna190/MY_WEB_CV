@@ -24,3 +24,36 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+
+// --- Visitor Counter ---
+// REPLACE THIS URL WITH YOUR DEPLOYED API GATEWAY URL
+const API_URL = 'https://ek5ytoxnz1.execute-api.us-east-1.amazonaws.com';
+
+async function updateCounter() {
+    try {
+        if (API_URL.includes('REPLACE')) {
+            const counterElement = document.getElementById('counter');
+            if (counterElement) counterElement.innerText = "Set API URL";
+            return;
+        }
+
+        const response = await fetch(API_URL);
+        const data = await response.json();
+
+        const counterElement = document.getElementById('counter');
+        if (counterElement) {
+            if (data.count) {
+                counterElement.innerText = data.count;
+            } else {
+                counterElement.innerText = data;
+            }
+        }
+
+    } catch (error) {
+        console.error('Error fetching visitor count:', error);
+        const counterElement = document.getElementById('counter');
+        if (counterElement) counterElement.innerText = "Error";
+    }
+}
+
+document.addEventListener('DOMContentLoaded', updateCounter);
