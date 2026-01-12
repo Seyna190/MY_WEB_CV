@@ -27,7 +27,7 @@ if (currentTheme) {
 
 // --- Visitor Counter ---
 // REPLACE THIS URL WITH YOUR DEPLOYED API GATEWAY URL
-const API_URL = 'https://ek5ytoxnz1.execute-api.us-east-1.amazonaws.com';
+const API_URL = 'https://{ek5ytoxnz1}.execute-api.us-east-1.amazonaws.com';
 
 async function updateCounter() {
     try {
