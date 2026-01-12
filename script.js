@@ -1,7 +1,7 @@
 const translations = {
     'en': {
-        'name': 'Who Is This Diva',
-        'role': 'Cloud Engineer & AWS Enthusiast',
+        'name': 'Seynabou Aidara Fall',
+        'role': 'Systems student & Tech Enthusiast',
         'about_title': 'About Me',
         'about_text': 'Passionate Cloud Engineer with a strong focus on AWS technologies. Dedicated to building scalable, secure, and efficient cloud infrastructure. Currently participating in the Cloud Resume Challenge to showcase my skills in serverless architecture, IaC with Terraform, and frontend development.',
         'exp_title': 'Experience',
@@ -25,8 +25,8 @@ const translations = {
         'visitor_label': 'Visitor Count: '
     },
     'es': {
-        'name': 'Who Is This Diva',
-        'role': 'Ingeniera Cloud & Entusiasta de AWS',
+        'name': 'Seynabou Aidara Fall',
+        'role': 'Estudiante de sistemas & Entusiasta de la tecnologia',
         'about_title': 'Sobre Mí',
         'about_text': 'Ingeniera Cloud apasionada con un fuerte enfoque en tecnologías AWS. Dedicada a construir infraestructuras en la nube escalables, seguras y eficientes. Actualmente participando en el Cloud Resume Challenge para mostrar mis habilidades en arquitectura serverless, IaC con Terraform y desarrollo frontend.',
         'exp_title': 'Experiencia',
@@ -50,8 +50,8 @@ const translations = {
         'visitor_label': 'Visitas: '
     },
     'ca': {
-        'name': 'Who Is This Diva',
-        'role': 'Enginyera Cloud & Entusiasta de AWS',
+        'name': 'Seynabou Aidara Fall',
+        'role': 'Estudiant de sistemes & Entusiasta de la tecnologia',
         'about_title': 'Sobre Mi',
         'about_text': 'Enginyera Cloud apassionada amb un fort enfocament en tecnologies AWS. Dedicada a construir infraestructures al núvol escalables, segures i eficients. Actualment participant en el Cloud Resume Challenge per mostrar les meves habilitats en arquitectura serverless, IaC amb Terraform i desenvolupament frontend.',
         'exp_title': 'Experiència',
@@ -75,8 +75,8 @@ const translations = {
         'visitor_label': 'Visites: '
     },
     'fr': {
-        'name': 'Who Is This Diva',
-        'role': 'Ingénieure Cloud & Passionnée AWS',
+        'name': 'Seynabou Aidara Fall',
+        'role': 'Etudiant des system & Passionnée de la tecnologie',
         'about_title': 'À Propos',
         'about_text': 'Ingénieure Cloud passionnée avec un fort intérêt pour les technologies AWS. Dédiée à la construction d\'infrastructures cloud évolutives, sécurisées et efficaces. Actuellement participante au Cloud Resume Challenge pour démontrer mes compétences en architecture serverless, IaC avec Terraform et développement frontend.',
         'exp_title': 'Expérience',
@@ -174,3 +174,4 @@ async function updateCounter() {
 }
 
 document.addEventListener('DOMContentLoaded', updateCounter);
+
