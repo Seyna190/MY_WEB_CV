@@ -195,12 +195,60 @@ body {
     color: var(--primary-color);
 }
 
-/* Theme Switch */
-.theme-switch-wrapper {
+/* Top Controls */
+.top-controls {
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language-switch {
+    display: flex;
+    gap: 5px;
+}
+
+.language-switch button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    /* Header is blue/gradient, so white text works well if overlapping or absolute */
+    /* Wait, header is below. Body bg is light/dark. Top controls are absolute on top of header or body? 
+       Actually, header has padding top. If controls are absolute top:20px, they might overlay the header 
+       or the body depending on layout.
+       Header has border-radius. Body has bg.
+       If controls are absolute, they are on top of everything. The header is the first element.
+       Header background is gradient. If controls are top:20px, they are likely ON TOP OF the Header.
+    */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+/* Adjust colors for visibility on top of potential header (blue) or body */
+.language-switch button {
+    background-color: var(--card-bg);
+    /* Use card bg for contrast against potential header or body */
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.language-switch button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Theme Switch */
+.theme-switch-wrapper {
+    /* Position handled by parent .top-controls */
+    display: flex;
+    align-items: center;
 }
 
 .theme-switch {
