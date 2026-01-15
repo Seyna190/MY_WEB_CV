@@ -175,3 +175,4 @@ async function updateCounter() {
 
 document.addEventListener('DOMContentLoaded', updateCounter);
 
+
